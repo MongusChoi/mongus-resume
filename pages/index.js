@@ -1,40 +1,43 @@
 import "../styles/App.css";
+import Image from 'next/image';
 
 const App = () => {
   return (
     <div className="container">
-      <header className="header">
-        <div className="logo">
-          <span className="dot"></span>
-          MyeongSoo Choi
-        </div>
-        <nav className="nav">
-          <a href="#resume">Resume</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </header>
-      <main className="main">
-        <div className="intro">
-          <div className="profile-pic">
-            <img src="/profile.jpeg" alt="Profile Picture" layout="fill" className="image" />
+      <div className="content">
+        <header className="header">
+          <div className="logo">
+            <span className="dot"></span>
+            MyeongSoo Choi
           </div>
-          <div className="intro-text">
-            <span className="title">Hello</span>
-            <span className="subtitle">My name is MyeongSoo Choi</span>
-            <p>
-              I'm Backend Developer. <br />
-              I usally use Node.js and MongoDB, MS Azure. <br />
-              Thank you for visit my page.
-            </p>
-            <div className="buttons">
-              <a href="#resume" className="button resume">Resume</a>
-              <a href="#projects" className="button projects">Projects</a>
-              <a href="#contact" className="button contact">Contact</a>
+          <nav className="nav">
+            <a href="#resume">Resume</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </header>
+        <main className="main">
+          <div className="intro">
+            <div className="profile-pic">
+              <Image src="/profile.jpeg" alt="Profile Picture" width={200} height={200} className="image" />
+            </div>
+            <div className="intro-text">
+              <span className="title">Hello</span>
+              <span className="subtitle">My name is MyeongSoo Choi</span>
+              <p>
+                I&apos;m Backend Developer. <br />
+                I usally use Node.js and MongoDB, MS Azure. <br />
+                Thank you for visit my page.
+              </p>
+              <div className="buttons">
+                <a href="#resume" className="button resume">Resume</a>
+                <a href="#projects" className="button projects">Projects</a>
+                <a href="#contact" className="button contact">Contact</a>
+              </div>
+            </div>
           </div>
-          </div>
-        </div>
-      </main>
+        </main>
+      </div>
       <footer className="footer">
         <div className="footer-content">
           <div className="footer-item">
@@ -48,11 +51,11 @@ const App = () => {
           <div className="footer-item"  >
             <span className="footer-item-title">Follow Me</span>
             <span>
-              <a href="https://www.linkedin.com/in/myeongsoo-choi-4b939b138">
-                <img src="/linkedin.avif" alt="LinkedIn" className="footer-icon-img" />
+              <a href="https://www.linkedin.com/in/myeongsoo-choi-4b939b138" target="_blank">
+                <Image src="/linkedin.avif" alt="LinkedIn" width={24} height={24} className="footer-icon-img" />
               </a>
-              <a href="https://github.com/MongusChoi">
-                <img src="/github.png" alt="Github" className="footer-icon-img" />
+              <a href="https://github.com/MongusChoi" target="_blank">
+                <Image src="/github.png" alt="Github" width={24} height={24} className="footer-icon-img" />
               </a>
             </span>
           </div>
