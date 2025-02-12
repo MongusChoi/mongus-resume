@@ -1,0 +1,38 @@
+:root {
+  --primary-main: #1976d2;
+  --text-secondary: rgba(0, 0, 0, 0.6);
+  --background-paper: #fff;
+}
+
+/* 다크모드를 사용하는 경우 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-main: #90caf9;
+    --text-secondary: rgba(255, 255, 255, 0.7);
+    --background-paper: #121212;
+  }
+}
+
+div.intro-text h1.title.MuiTypography-root {
+  font-size: 2.125rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 1rem !important;
+  display: block !important;
+  color: #333 !important;
+  font-family: inherit !important;
+}
+
+div.intro-text h2.subtitle.MuiTypography-root {
+  font-size: 1.5rem !important;
+  margin-bottom: 1rem !important;
+  display: block !important;
+  color: #666 !important;
+  font-family: inherit !important;
+}
+
+/* 다크모드를 사용하는 경우 */
+@media (prefers-color-scheme: dark) {
+  div.intro-text h1.title.MuiTypography-root {
+    color: #fff !important;
+  }
+}
